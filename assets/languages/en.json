@@ -1,0 +1,22 @@
+{
+  "welcome": "Welcome to AgroWorkbench",
+  "select_role": "Select your role to continue:",
+  "farmer": "Individual Farmer",
+  "group": "Farmer Group",
+  "agronomist": "Agronomist",
+  "continue": "Continue to Dashboard",
+  "guest_mode": "Continue as Guest",
+  "home": "Home",
+  "services": "Services",
+  "markets": "Markets",
+  "profile": "Profile",
+  "weather": "Weather",
+  "alerts": "Alerts",
+  "ai_advisory": "AI Advisory",
+  "credit_score": "Credit Score",
+  "my_farm": "My Farm",
+  "market_prices": "Market Prices",
+  "yield_prediction": "Yield Prediction",
+  "buy_inputs": "Buy Inputs",
+  "get_services": "Get Services"
+}

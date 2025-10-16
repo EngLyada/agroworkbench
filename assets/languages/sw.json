@@ -1,0 +1,22 @@
+{
+  "welcome": "Karibu katika AgroWorkbench",
+  "select_role": "Chagua jukumu lako ili kuendelea:",
+  "farmer": "Mkulima Binafsi",
+  "group": "Kikundi cha Wakulima",
+  "agronomist": "Mtafiti wa Kilimo",
+  "continue": "Endelea kwenye Dashibodi",
+  "guest_mode": "Endelea kama Mgeni",
+  "home": "Nyumbani",
+  "services": "Huduma",
+  "markets": "Soko",
+  "profile": "Wasifu",
+  "weather": "Hali ya hewa",
+  "alerts": "Arifa",
+  "ai_advisory": "Ushauri wa AI",
+  "credit_score": "Alama ya Mkopo",
+  "my_farm": "Shamba langu",
+  "market_prices": "Bei za Soko",
+  "yield_prediction": "Utabiri wa mavuno",
+  "buy_inputs": "Nunua Vyakuzingira",
+  "get_services": "Pata Huduma"
+}

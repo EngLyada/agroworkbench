@@ -1,0 +1,22 @@
+{
+  "welcome": "Tukwata ku AgroWorkbench",
+  "select_role": "Londa rollo lyo okugenda:",
+  "farmer": "Mushamika wa SSente",
+  "group": "Gulu ya Bashamika",
+  "agronomist": "Mushamikamu",
+  "continue": "Genda ku Dashboard",
+  "guest_mode": "Genda nga omukozesa",
+  "home": "Tterekero",
+  "services": "Omulimu",
+  "markets": "Mbare",
+  "profile": "Profaayiro",
+  "weather": "Embeera",
+  "alerts": "Biyambi",
+  "ai_advisory": "Akayambi k'olulimi",
+  "credit_score": "Kakati",
+  "my_farm": "Lirimu lyange",
+  "market_prices": "Mbeera za baregee",
+  "yield_prediction": "Okugeza embeera",
+  "buy_inputs": "Gula obulimi",
+  "get_services": "Kola obulimu"
+}
