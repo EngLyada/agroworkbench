@@ -38,20 +38,24 @@ dependencies:
   # Additional dependencies for AgroWorkbench
   http: ^1.2.2  # For API calls
   shared_preferences: ^2.3.4  # For local data storage
-  geolocator: ^13.0.0  # For location services (using older version to avoid toARGB32 error)
-  geocoding: ^4.0.0  # For reverse geocoding
+  geolocator: ^14.0.2  # For location services (using older version to avoid toARGB32 error)
+  geocoding: ^4.0.0 
+   # For reverse geocoding
   flutter_localizations: # For internationalization
     sdk: flutter
   cached_network_image: ^3.4.1  # For caching images
   image_picker: ^1.1.2  # For image picking functionality
   path_provider: ^2.1.5  # For file system access
   connectivity_plus: ^7.0.0  # For network connectivity
-  flutter_chat_ui: ^1.6.11  # For chat interface
+  flutter_chat_ui: ^2.9.1  # For chat interface
   flutter_map: ^8.2.2  # For map display
   latlong2: ^0.9.0  # For coordinate handling
-  syncfusion_flutter_charts: ^29.1.38  # For advanced charting
+  syncfusion_flutter_charts: ^31.2.2  # For advanced charting
   provider: ^6.1.2  # For state management
   uuid: ^4.5.1  # For generating unique IDs
+  get: ^4.6.5
+  get_storage: ^2.1.1
+  google_fonts: ^6.3.2
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +66,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -77,9 +81,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
-    - assets/icons/
-    - assets/languages/
+    - assets/illustrations/
+    # - assets/icons/
+    # - assets/languages/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

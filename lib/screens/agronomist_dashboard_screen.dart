@@ -10,7 +10,7 @@ class AgronomistDashboardScreen extends StatefulWidget {
   final Agronomist agronomist;
   final List<Farmer> assignedFarmers;
   
-  const AgronomistDashboardScreen({Key? key, required this.agronomist, required this.assignedFarmers}) : super(key: key);
+  const AgronomistDashboardScreen({super.key, required this.agronomist, required this.assignedFarmers});
 
   @override
   State<AgronomistDashboardScreen> createState() => _AgronomistDashboardScreenState();
@@ -18,7 +18,7 @@ class AgronomistDashboardScreen extends StatefulWidget {
 
 class _AgronomistDashboardScreenState extends State<AgronomistDashboardScreen> 
     with TickerProviderStateMixin {
-  bool _showMapView = true;
+  final bool _showMapView = true;
   late TabController _tabController;
 
   @override
@@ -228,7 +228,7 @@ class _AgronomistDashboardScreenState extends State<AgronomistDashboardScreen>
                   ),
                   title: Text(farmer.name),
                   subtitle: Text(
-                    'Crop: ${farmer.crops.length > 0 ? farmer.crops[0].name : "N/A"} • '
+                    'Crop: ${farmer.crops.isNotEmpty ? farmer.crops[0].name : "N/A"} • '
                     'Land: ${farmer.acreage} acres',
                   ),
                   trailing: PopupMenuButton(

@@ -13,7 +13,7 @@ class AccessibleTextField extends StatelessWidget {
   final TextEditingController? controller;
 
   const AccessibleTextField({
-    Key? key,
+    super.key,
     required this.label,
     required this.hint,
     this.validator,
@@ -22,7 +22,7 @@ class AccessibleTextField extends StatelessWidget {
     this.obscureText = false,
     this.initialValue,
     this.controller,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

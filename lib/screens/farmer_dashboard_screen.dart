@@ -12,7 +12,7 @@ import '../utils/app_constants.dart';
 class FarmerDashboardScreen extends StatefulWidget {
   final Farmer farmer;
   
-  const FarmerDashboardScreen({Key? key, required this.farmer}) : super(key: key);
+  const FarmerDashboardScreen({super.key, required this.farmer});
 
   @override
   State<FarmerDashboardScreen> createState() => _FarmerDashboardScreenState();
@@ -517,7 +517,7 @@ class _FarmerDashboardScreenState extends State<FarmerDashboardScreen> {
                                   ],
                                 ),
                               ),
-                            ).toList(),
+                            ),
                             const SizedBox(height: 8),
                             Text(
                               AppHelpers.formatDateWithMonth(advisory.createdAt),
@@ -994,7 +994,7 @@ class _FarmerDashboardScreenState extends State<FarmerDashboardScreen> {
                                       ],
                                     ),
                                   ),
-                                ).toList(),
+                                ),
                                 const SizedBox(height: 12),
                                 Text(
                                   AppHelpers.formatDateWithMonth(advisory.createdAt),

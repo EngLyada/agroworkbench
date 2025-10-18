@@ -18,7 +18,6 @@ import 'models/group_model.dart';
 import 'models/agronomist_model.dart';
 import 'models/credit_score_model.dart';
 import 'services/app_state.dart';
-import 'utils/app_constants.dart';
 import 'utils/app_theme.dart';
 import 'utils/localization.dart';
 

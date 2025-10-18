@@ -8,7 +8,7 @@ class GroupDashboardScreen extends StatefulWidget {
   final FarmerGroup group;
   final List<Farmer> members; // List of farmers in the group
   
-  const GroupDashboardScreen({Key? key, required this.group, required this.members}) : super(key: key);
+  const GroupDashboardScreen({super.key, required this.group, required this.members});
 
   @override
   State<GroupDashboardScreen> createState() => _GroupDashboardScreenState();

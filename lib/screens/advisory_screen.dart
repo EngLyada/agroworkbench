@@ -7,7 +7,7 @@ class AdvisoryScreen extends StatefulWidget {
   final String farmerId;
   final String cropType;
   
-  const AdvisoryScreen({Key? key, required this.farmerId, required this.cropType}) : super(key: key);
+  const AdvisoryScreen({super.key, required this.farmerId, required this.cropType});
 
   @override
   State<AdvisoryScreen> createState() => _AdvisoryScreenState();
@@ -162,7 +162,7 @@ class _AdvisoryScreenState extends State<AdvisoryScreen> {
                                     ],
                                   ),
                                 ),
-                              ).toList(),
+                              ),
                               const SizedBox(height: 16),
                               const Text(
                                 'Why this advice?',

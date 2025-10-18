@@ -4,7 +4,7 @@ import '../models/market_price_model.dart';
 import '../utils/app_constants.dart';
 
 class MarketPricesScreen extends StatefulWidget {
-  const MarketPricesScreen({Key? key}) : super(key: key);
+  const MarketPricesScreen({super.key});
 
   @override
   State<MarketPricesScreen> createState() => _MarketPricesScreenState();

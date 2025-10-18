@@ -6,7 +6,7 @@ import '../utils/app_constants.dart';
 class CreditScoringScreen extends StatefulWidget {
   final CreditScore creditScore;
   
-  const CreditScoringScreen({Key? key, required this.creditScore}) : super(key: key);
+  const CreditScoringScreen({super.key, required this.creditScore});
 
   @override
   State<CreditScoringScreen> createState() => _CreditScoringScreenState();
@@ -192,7 +192,7 @@ class _CreditScoringScreenState extends State<CreditScoringScreen> {
                               ],
                             ),
                           ),
-                        ).toList(),
+                        ),
                       ],
                     ),
                   ),

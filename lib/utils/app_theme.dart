@@ -160,9 +160,8 @@ class AppTheme {
       ),
     );
   }
-  
-  static CardTheme get _cardTheme {
-    return CardTheme(
+static CardThemeData get _cardTheme {
+    return CardThemeData(
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppConstants.borderRadius),
@@ -244,4 +243,60 @@ class AppTheme {
     }
     return MaterialColor(color.value, swatch);
   }
+}
+
+//Added themes 
+
+
+class AppThemes {
+  // Light Theme
+  static final light = ThemeData(
+    primaryColor: Colors.green,
+    scaffoldBackgroundColor: Colors.white,
+    brightness: Brightness.light,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.white,
+      elevation: 0,
+      iconTheme: IconThemeData(color: Colors.black),
+    ),
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: Colors.green,
+      primary: Colors.green,
+      brightness: Brightness.light,
+      surface: Colors.white,
+    ),
+    cardColor: Colors.white,
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: Colors.white,
+      selectedItemColor: Colors.green,
+      unselectedItemColor: Colors.grey,
+    ),
+    fontFamily: 'Roboto',
+  );
+
+
+  // Dark Theme
+    static final dark = ThemeData(
+    primaryColor: Colors.green,
+    scaffoldBackgroundColor: const Color(0xFF121212),
+    brightness: Brightness.dark,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Color(0xFF121212),
+      elevation: 0,
+      iconTheme: IconThemeData(color: Colors.white),
+    ),
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: Colors.green,
+      primary: Colors.green,
+      brightness: Brightness.dark,
+      surface: const Color(0xFF121212),
+    ),
+    cardColor: const Color(0xFF1E1E1E),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor:  Color(0xFF1E1E1E),
+      selectedItemColor:  Color.fromARGB(255, 43, 255, 0),
+      unselectedItemColor: Colors.grey,
+    ),
+    fontFamily: 'Roboto',
+  );
 }

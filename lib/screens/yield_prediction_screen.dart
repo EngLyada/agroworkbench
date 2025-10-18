@@ -7,7 +7,7 @@ class YieldPredictionScreen extends StatefulWidget {
   final String farmerId;
   final String cropType;
   
-  const YieldPredictionScreen({Key? key, required this.farmerId, required this.cropType}) : super(key: key);
+  const YieldPredictionScreen({super.key, required this.farmerId, required this.cropType});
 
   @override
   State<YieldPredictionScreen> createState() => _YieldPredictionScreenState();
@@ -98,7 +98,7 @@ class _YieldPredictionScreenState extends State<YieldPredictionScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  '${_prediction.predictedYield.toStringAsFixed(1)}',
+                                  _prediction.predictedYield.toStringAsFixed(1),
                                   style: const TextStyle(
                                     fontSize: 32,
                                     fontWeight: FontWeight.bold,
@@ -223,7 +223,7 @@ class _YieldPredictionScreenState extends State<YieldPredictionScreen> {
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                         ),
-                        value: 'Vegetative',
+                        initialValue: 'Vegetative',
                         items: const [
                           DropdownMenuItem(
                             value: 'Planting',
@@ -280,7 +280,7 @@ class _YieldPredictionScreenState extends State<YieldPredictionScreen> {
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                         ),
-                        value: 'Drip',
+                        initialValue: 'Drip',
                         items: const [
                           DropdownMenuItem(
                             value: 'Drip',

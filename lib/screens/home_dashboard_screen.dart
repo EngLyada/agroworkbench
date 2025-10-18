@@ -5,13 +5,12 @@ import '../widgets/alerts_widget.dart';
 import '../widgets/responsive_wrapper.dart';
 import '../models/weather_model.dart';
 import '../models/user_model.dart';
-import '../services/app_state.dart';
 import '../utils/app_constants.dart';
 
 class HomeDashboardScreen extends StatefulWidget {
   final User user;
 
-  const HomeDashboardScreen({Key? key, required this.user}) : super(key: key);
+  const HomeDashboardScreen({super.key, required this.user});
 
   @override
   State<HomeDashboardScreen> createState() => _HomeDashboardScreenState();

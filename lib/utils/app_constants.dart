@@ -6,7 +6,7 @@ class AppConstants {
   static const Color primaryColor = Color(0xFF10B981); // Green - Agriculture
   static const Color secondaryColor = Color(0xFF3B82F6); // Blue - Trust
   static const Color warningColor = Color(0xFFF59E0B); // Orange
-  static const Color dangerColor = Color(0xEFC4444); // Red
+  static const Color dangerColor = Color(0x0efc4444); // Red
   static const Color successColor = Color(0xFF22C55E); // Success
 
   // Typography

@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../models/farmer_model.dart';
 import '../models/advisory_model.dart';
 import '../models/yield_prediction_model.dart';
 import '../models/market_price_model.dart';

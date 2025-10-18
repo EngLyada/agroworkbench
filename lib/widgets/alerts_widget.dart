@@ -7,9 +7,9 @@ class AlertsWidget extends StatelessWidget {
   final List<Alert> alerts;
 
   const AlertsWidget({
-    Key? key,
+    super.key,
     required this.alerts,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class AlertsWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            ...alerts.take(3).map((alert) => _buildAlertItem(alert)).toList(), // Show only first 3 alerts
+            ...alerts.take(3).map((alert) => _buildAlertItem(alert)), // Show only first 3 alerts
             if (alerts.length > 3) ...[
               const SizedBox(height: 8),
               TextButton(

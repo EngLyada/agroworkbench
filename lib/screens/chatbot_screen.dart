@@ -4,7 +4,7 @@ import 'package:uuid/uuid.dart';
 import '../utils/app_constants.dart';
 
 class ChatbotScreen extends StatefulWidget {
-  const ChatbotScreen({Key? key}) : super(key: key);
+  const ChatbotScreen({super.key});
 
   @override
   State<ChatbotScreen> createState() => _ChatbotScreenState();

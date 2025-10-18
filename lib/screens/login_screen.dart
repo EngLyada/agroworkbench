@@ -6,7 +6,7 @@ import '../utils/accessibility_helper.dart';
 import '../widgets/accessible_text_field.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -16,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _phoneController = TextEditingController();
   final _otpController = TextEditingController();
   bool _showOtpField = false;
-  String _verificationId = '';
+  final String _verificationId = '';
   int? _resendToken;
 
   @override

@@ -7,9 +7,9 @@ class WeatherWidget extends StatelessWidget {
   final WeatherData weatherData;
 
   const WeatherWidget({
-    Key? key,
+    super.key,
     required this.weatherData,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class WeatherWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            ...weatherData.forecast.map((day) => _buildForecastDay(day)).toList(),
+            ...weatherData.forecast.map((day) => _buildForecastDay(day)),
           ],
         ),
       ),

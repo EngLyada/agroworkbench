@@ -10,12 +10,12 @@ class DashboardLayout extends StatefulWidget {
   final Function(int) onTabSelected;
 
   const DashboardLayout({
-    Key? key,
+    super.key,
     required this.title,
     required this.child,
     required this.currentIndex,
     required this.onTabSelected,
-  }) : super(key: key);
+  });
 
   @override
   State<DashboardLayout> createState() => _DashboardLayoutState();
